@@ -1,0 +1,208 @@
+{
+  "rooms": [
+    {
+      "id": "lab-101a",
+      "name": "Lab 101-A",
+      "type": "lab",
+      "capacity": 30,
+      "schedule": [
+        {
+          "day": "Monday",
+          "busy": [
+            { "start": "10:00", "end": "11:00", "course": "MDM - Lab" }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "busy": [
+            { "start": "11:15", "end": "12:15", "course": "DAA/PBB/508" },
+            { "start": "2:15", "end": "3:15", "course": "MDM I Theory" }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "busy": [
+            { "start": "10:00", "end": "11:00", "course": "DAA/C/PBB/702-C" },
+            { "start": "11:15", "end": "12:15", "course": "CCN/AVS/508" }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "busy": [
+            { "start": "11:15", "end": "12:15", "course": "OS/C/SK/608" },
+            { "start": "3:15", "end": "4:15", "course": "MDM - Lab" }
+          ]
+        },
+        {
+          "day": "Friday",
+          "busy": [
+            { "start": "10:00", "end": "11:00", "course": "CCN/AVS/508" },
+            { "start": "2:15", "end": "3:15", "course": "OS/SK/508" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lab-101b",
+      "name": "Lab 101-B",
+      "type": "lab",
+      "capacity": 30,
+      "schedule": [
+        {
+          "day": "Monday",
+          "busy": [
+            { "start": "3:15", "end": "4:15", "course": "MDM - Lab" }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "busy": [
+            { "start": "12:15", "end": "1:15", "course": "OS/A/SK/603-7" }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "busy": [
+            { "start": "12:15", "end": "1:15", "course": "DAA/PBB/508" },
+            { "start": "3:15", "end": "4:15", "course": "HISS" }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "busy": [
+            { "start": "12:15", "end": "1:15", "course": "DAA/D/NR/603-2" }
+          ]
+        },
+        {
+          "day": "Friday",
+          "busy": [
+            { "start": "11:15", "end": "12:15", "course": "SMCS/TP/508" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classroom-201",
+      "name": "Classroom 201",
+      "type": "classroom",
+      "capacity": 60,
+      "schedule": [
+        {
+          "day": "Monday",
+          "busy": [
+            { "start": "9:00", "end": "10:00", "course": "OS/SK/508" }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "busy": [
+            { "start": "9:00", "end": "10:00", "course": "DAA/PBB/508" },
+            { "start": "2:15", "end": "3:15", "course": "MDM I Theory" }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "busy": [
+            { "start": "9:00", "end": "10:00", "course": "OS/B/SK/606-5" },
+            { "start": "1:15", "end": "2:15", "course": "CCN/AVS/508" }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "busy": [
+            { "start": "9:00", "end": "10:00", "course": "OS/SD/508" },
+            { "start": "2:15", "end": "3:15", "course": "FOM - II/AsT/207" }
+          ]
+        },
+        {
+          "day": "Friday",
+          "busy": [
+            { "start": "9:00", "end": "10:00", "course": "CCN/AVS/508" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classroom-202",
+      "name": "Classroom 202",
+      "type": "classroom",
+      "capacity": 60,
+      "schedule": [
+        {
+          "day": "Monday",
+          "busy": [
+            { "start": "11:15", "end": "12:15", "course": "DAA/PBB/508" }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "busy": [
+            { "start": "1:15", "end": "2:15", "course": "DAA/B/PBB/702-B" }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "busy": [
+            { "start": "11:15", "end": "12:15", "course": "DAA/PBB/508" }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "busy": [
+            { "start": "10:00", "end": "11:00", "course": "OS/SD/508" },
+            { "start": "3:15", "end": "4:15", "course": "SMCS/TP/508" }
+          ]
+        },
+        {
+          "day": "Friday",
+          "busy": [
+            { "start": "11:15", "end": "12:15", "course": "SMCS/TP/508" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "classroom-203",
+      "name": "Classroom 203",
+      "type": "classroom",
+      "capacity": 50,
+      "schedule": [
+        {
+          "day": "Monday",
+          "busy": [
+            { "start": "12:15", "end": "1:15", "course": "CCN/AVS/508" }
+          ]
+        },
+        {
+          "day": "Tuesday",
+          "busy": [
+            { "start": "10:00", "end": "11:00", "course": "DAA/C/PBB/702-C" },
+            { "start": "11:15", "end": "12:15", "course": "CCN/D/AVS/703-A" }
+          ]
+        },
+        {
+          "day": "Wednesday",
+          "busy": [
+            { "start": "1:15", "end": "2:15", "course": "DAA/PBB/508" }
+          ]
+        },
+        {
+          "day": "Thursday",
+          "busy": [
+            { "start": "1:15", "end": "2:15", "course": "CCN/A/AVS/604-4" },
+            { "start": "4:15", "end": "5:15", "course": "HISS" }
+          ]
+        },
+        {
+          "day": "Friday",
+          "busy": [
+            { "start": "1:15", "end": "2:15", "course": "CCN/B/AVS/607-B" }
+          ]
+        }
+      ]
+    }
+  ],
+  "availableTimeSlots": [
+    "9:00", "10:00", "11:00", "11:15", "12:15", "1:15", "2:15", "3:15", "4:15", "5:15", "6:00"
+  ]
+}

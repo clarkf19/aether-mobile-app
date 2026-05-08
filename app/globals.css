@@ -1,0 +1,161 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'leaflet/dist/leaflet.css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Light mode: clean off-white background */
+  --background: #fafaf8;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  
+  /* Primary: yellow accent */
+  --primary: #facc15;
+  --primary-foreground: #1a1a1a;
+  
+  /* Secondary: cyan accent */
+  --secondary: #06b6d4;
+  --secondary-foreground: #ffffff;
+  
+  /* Muted: subtle grays */
+  --muted: #d4d4d8;
+  --muted-foreground: #71717a;
+  
+  /* Accent: subtle dark */
+  --accent: #06b6d4;
+  --accent-foreground: #ffffff;
+  
+  --destructive: #dc2626;
+  --destructive-foreground: #fca5a5;
+  --border: #e4e4e7;
+  --input: #f4f4f5;
+  --ring: #facc15;
+  
+  /* System colors */
+  --chart-1: #facc15;
+  --chart-2: #06b6d4;
+  --chart-3: #8b5cf6;
+  --chart-4: #06b6d4;
+  --chart-5: #ec4899;
+  
+  --radius: 0rem;
+  
+  /* Sidebar */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a1a1a;
+  --sidebar-primary: #facc15;
+  --sidebar-primary-foreground: #1a1a1a;
+  --sidebar-accent: #06b6d4;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e4e4e7;
+  --sidebar-ring: #facc15;
+}
+
+@theme inline {
+  --font-sans: 'Sora', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@layer base {
+  /* No grid overlay in light mode */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Neo-brutalism card styles */
+@layer components {
+  .card-neo {
+    @apply border-2 border-black bg-white p-4;
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+  }
+
+  .card-neo:hover {
+    box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.15);
+    transform: translate(-1px, -1px);
+  }
+
+  .card-neo.accent {
+    @apply border-2 border-black bg-yellow-300;
+  }
+
+  .card-neo.secondary {
+    @apply border-2 border-black bg-cyan-300;
+  }
+
+  .btn-neo {
+    @apply border-2 border-black px-4 py-2 font-bold transition-all;
+    box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-neo:hover {
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+    transform: translate(2px, 2px);
+  }
+
+  .btn-neo.primary {
+    @apply bg-yellow-300 border-black text-black;
+  }
+
+  .btn-neo.secondary {
+    @apply bg-cyan-300 border-black text-black;
+  }
+
+  .btn-neo.white {
+    @apply bg-white border-black text-black;
+  }
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "studentEmail": "vidhaan05shah@gmail.com",
+    "studentName": "Anjali Shah",
+    "leaveType": "Medical Leave",
+    "date": "2026-04-21",
+    "reason": "xyz",
+    "id": "leave-1776527087936",
+    "timestamp": "2026-04-18T15:44:47.936Z",
+    "status": "pending",
+    "responses": []
+  }
+]
